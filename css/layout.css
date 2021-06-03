@@ -1,0 +1,68 @@
+/* LAYOUT */
+/* ***** */
+:root{
+    --primary: #e76d27;
+    --secondary:#9c9c9c;
+    --font: 16px sans-serif;
+    --font-logo:20px sans-serif;
+    --font-main: bold 32px sans-serif;
+    --color-button: white;
+}
+
+.wrapper{
+    max-inline-size: 1348px ;
+    height: 100vh;
+    margin: auto;
+    padding: 2rem;
+    display: grid;
+    grid-template: repeat(4, auto)/ 
+                   repeat(4, auto);
+    grid-template-areas:  "header header header header"
+                          " main main main main"
+                          " . . . . "
+                          " . footer . .";
+
+}
+/* ESTILOS MAIN */
+main{
+    margin-block-start: 3rem;
+}
+
+main h1{
+    font: var(--font-main);
+    }
+main h1 span{
+    display:block;
+}
+.main__description{
+    color: var(--secondary);
+    font: var(--font);  
+    margin-block-end: 2rem; 
+    margin-block-start: 2rem; 
+    margin-inline-end: 2rem;
+    }
+
+.main__button{
+    color: var(--color-button);
+    font: var(--font);
+    background: var(--primary);
+    border-radius: 5px;
+    margin-block-start:2rem ;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    border: none;
+        
+    }
+
+.section{
+    margin-block-start: 5rem;
+    padding-block-start: 2rem;
+    padding-inline-end: 2rem;
+    padding-inline-start: 1rem;
+    grid-area: main;
+}
+
+.article img{    
+    grid-area: main;
+    margin-block-start: 3rem;
+}
