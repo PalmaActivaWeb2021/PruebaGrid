@@ -1,3 +1,3 @@
-# PLANTILLA PA_FLEXBOX
+# EJERCICIO GRID
 ---
-# pa_flexbox
+# Ejercicio grid . Plantilla landing page
